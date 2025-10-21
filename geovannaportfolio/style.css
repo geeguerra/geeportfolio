@@ -12,7 +12,7 @@ body {
 }
 
 nav{
-  /* remove margem fixa para não quebrar ao dar zoom */
+ 
   margin-right: 0;
 }
 
@@ -99,7 +99,7 @@ nav a:hover {
   height: auto;
 }
 
-/* Hero (Seção Sobre) em grid responsivo */
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 400px;
@@ -126,7 +126,7 @@ footer {
   color: #555;
 }
 
-/* Sections */
+
 .section {
   padding: 60px 40px;
 }
@@ -147,7 +147,6 @@ footer {
   margin-bottom: 24px;
 }
 
-/* Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -190,7 +189,7 @@ footer {
   filter: brightness(0.95);
 }
 
-/* Skills */
+
 .skills-list {
   list-style: none;
   display: flex;
@@ -213,7 +212,7 @@ footer {
   margin-right: 8px;
 }
 
-/* Contact */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -254,7 +253,7 @@ footer {
   font-family: "Inter", sans-serif;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
