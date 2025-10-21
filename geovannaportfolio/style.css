@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Aboreto", sans-serif;
+  background-color: #d0d0ff;
+  color: #000;
+}
+
+nav{
+  /* remove margem fixa para não quebrar ao dar zoom */
+  margin-right: 0;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+header h1 {
+  color: #3a56e4;
+  font-size: 2em;
+  margin: 0;
+  font-family: "Aboreto"
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.text-content {
+  max-width: 650px;
+  margin: 0;
+}
+
+.text-content h2 {
+  color: #3a56e4;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.social a i {
+  margin-right: 5px;
+}
+
+.image-container {
+  max-width: 440px;
+  width: 100%;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  margin-top: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Hero (Seção Sobre) em grid responsivo */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .image-container {
+    margin-top: 0;
+  }
+}
+
+footer {
+  padding: 20px 40px;
+  text-align: center;
+  color: #555;
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+}
+
+.section.alt {
+  background: #c3c3ff;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6em;
+  color: #3a56e4;
+  margin-bottom: 24px;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.project-card h4 {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 14px;
+}
+
+.btn {
+  display: inline-block;
+  background: #3a56e4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+}
+
+.skill {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.skill i {
+  font-size: 18px;
+  vertical-align: -2px;
+  margin-right: 8px;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-link {
+  color: #3a56e4;
+  text-decoration: none;
+}
+
+.contact-form {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  .text-content {
+    margin: 10px auto;
+    max-width: 95%;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .image-container {
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
